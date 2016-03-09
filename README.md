@@ -1,6 +1,9 @@
 # lelylan_setup
 Lelylan automatic setup script including setting up from step 1
 
+Platform:
+Linux/Ubuntu style
+
 Environment:
 1) Ruby installed with rvm version 1.9.3-p194
 2) Node installed from nvm version 0.10.36
