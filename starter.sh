@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp environment.env lelylan/
 cd lelylan
 cd api-proxy
 nf run -e ../environment.env
