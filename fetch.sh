@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ~/.nvm/nvm.sh
 mkdir lelylan
 cd lelylan
 git clone https://github.com/lelylan/api-proxy
@@ -14,7 +15,7 @@ git clone https://github.com/lelylan/mqtt
 git clone https://github.com/lelylan/webhooks
 git clone https://github.com/lelylan/websockets
 cd api-proxy
-sudo npm install && sudo npm install -g foreman
+npm install && npm install -g foreman
 cd ../devices
 gem install bundler
 bundle install
@@ -31,12 +32,12 @@ cd ../people
 gem install bundler
 bundle install
 cd ../physicals
-sudo npm install && sudo npm install -g foreman coffee-script
+npm install && npm install -g foreman coffee-script
 cd ../nodes
-sudo npm install && sudo npm install -g foreman
+npm install && npm install -g foreman
 cd ../mqtt
-sudo npm install && sudo npm install -g foreman
+npm install && npm install -g foreman
 cd ../webhooks
-sudo npm install && sudo npm install -g foreman
+npm install && npm install -g foreman
 cd ../websockets
-sudo npm install && sudo npm install -g foreman
+npm install && npm install -g foreman

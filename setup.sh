@@ -13,6 +13,13 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | b
 source ~/.profile
 nvm install 0.10.36
 nvm use 0.10.36
+source ~/.nvm/nvm.sh
+source ~/.bashrc
 sudo add-apt-repository ppa:chris-lea/libpgm
 sudo apt-get update
 sudo apt-get install libzmq-dev
+sudo apt-get install mongodb-server
+sudo mkdir -p /data/db/
+sudo chown `id -u` /data/db
+sudo service mongodb start
+sudo apt-get install tcl8.5
